@@ -1,0 +1,278 @@
+.contactus-bgimg {
+  background-image: url("../public//images/testimonials/1.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 40vh;
+  width: 100%;
+}
+.contactus-bgimg .overlay {
+  width: 100%;
+  min-height: 40vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.contactcontent {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  padding: 40px calc(15px + 2vw);
+  gap: 30px;
+}
+
+.contactcontent .contactheading h1 {
+  font-size: 70px;
+  line-height: 90px;
+  background: #fff;
+  color: #002915;
+}
+
+.contactcontent .privatdining h2 {
+  text-align: left;
+  word-wrap: break-word;
+  font-family: Playfair Display, Gotham SSm A, Gotham SSm B, -apple-system,
+    BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, sans-serif;
+  background: #fff;
+  color: #002915;
+}
+.contactcontent .privatdining p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  white-space: break-spaces;
+  color: rgb(94, 122, 136);
+}
+.contactcontent .privatdining a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(94, 122, 136);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contactcontent .contact-membership h2 {
+  text-align: left;
+  word-wrap: break-word;
+  font-family: Playfair Display, Gotham SSm A, Gotham SSm B, -apple-system,
+    BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, sans-serif;
+  background: #fff;
+  color: #002915;
+}
+.contactcontent .contact-membership p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(94, 122, 136);
+}
+.contactcontent .contact-membership a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(94, 122, 136);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contactcontent .presspartner h2 {
+  text-align: left;
+  word-wrap: break-word;
+  font-family: Playfair Display, Gotham SSm A, Gotham SSm B, -apple-system,
+    BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, sans-serif;
+  background: #fff;
+  color: #002915;
+}
+.contactcontent .presspartner p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(94, 122, 136);
+}
+.contactcontent .presspartner a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(94, 122, 136);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contactcontent .contact-carear h2 {
+  text-align: left;
+  word-wrap: break-word;
+  font-family: Playfair Display, Gotham SSm A, Gotham SSm B, -apple-system,
+    BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, sans-serif;
+  background: #fff;
+  color: #002915;
+}
+.contactcontent .contact-carear p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(94, 122, 136);
+}
+.contactcontent .contact-carear a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(94, 122, 136);
+  text-decoration: none;
+  cursor: pointer;
+}
+.contct-information {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contct-information .imgdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.contct-information .imgdiv a {
+  height: 5vh;
+  text-align: center;
+  text-decoration: none;
+  color: #002915;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  font-size: 13px;
+}
+.contct-information .imgdiv a img {
+  height: inherit;
+  padding: 5px;
+}
+@media (max-width: 830px) {
+  .contactcontent {
+    grid-template-columns: 1fr 1fr;
+  }
+  .emptydiv {
+    display: none;
+  }
+}
+@media (max-width: 570px) {
+  .contactcontent {
+    grid-template-columns: 1fr;
+  }
+  .contct-information .imgdiv {
+    flex-direction: column;
+  }
+}
+
+.contact .contactForm {
+  max-width: 1000px;
+  margin: 50px auto;
+  border: 1px solid #dcdcdc;
+  border-radius: 0.3rem;
+  background-color: #fff;
+  display: grid;
+  gap:30px;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+
+@media (max-width:992px) {
+  .contact .contactForm{
+    grid-template-columns: 1fr;
+  }
+  .contact .contactForm .right{
+    display: none;
+  }
+}
+
+.contact .contactForm .left{
+  padding: 20px;
+}
+
+.contact .contactForm .right{
+  overflow: hidden;
+}
+.contact .contactForm .right img{
+  width:100%;
+  height: 100%;
+  object-fit: conver;
+}
+
+.contact .contactForm h2 {
+  font-family: "Poppins";
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.contact .contactForm form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px 20px;
+}
+
+@media (max-width: 768px) {
+  .contact .contactForm form {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact .contactForm form .eachfield:nth-child(3),
+.contact .contactForm form .eachfield:nth-child(4),
+.contact .contactForm form .eachfield:nth-child(5),
+.contact .contactForm form .eachfield:nth-child(6) {
+  grid-column: 1/-1;
+}
+
+.contact form label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: "Poppins";
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  font-family: "Poppins";
+  padding: 6px 10px;
+  border: 1px solid rgba(185, 190, 199, 0.6);
+  border-radius: 0.3rem;
+  transition: 0.2s;
+  color: #292d34;
+  font-size: 14px;
+}
+
+.contact form input::placeholder,
+.contact form textarea::placeholder{
+  font-size: 14px;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+  outline: none;
+  border: 1px solid #ff8f75;
+}
+
+.contact button {
+  background: #000 ;
+  border:2px solid #000;
+  color: #fff;
+  padding:8px 15px;
+  font-family: "Poppins";
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: .4s ease-in-out;
+}
+
+.contact button:hover{
+  opacity: .9;
+}

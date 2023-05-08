@@ -1,0 +1,47 @@
+.About header {
+  height: 50vh;
+  background-image: url('../public//images/about/1.webp');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.8);
+}
+.About header h1 {
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-size: calc(25px + 1vw);
+}
+.About .grid {
+  max-width: 1200px;
+  margin: 60px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  width: 90%;
+  gap: 30px;
+  border-radius: 5px;
+}
+.About .grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.About .text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.About .text p{
+    font-size: 17px;
+    font-family: "Poppins";
+    line-height: 29px;
+    text-align: justify;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,129 @@
+
+
+nav .logo a{
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    color:#F4AA3C !important;
+}
+
+nav .logo img{
+    width: 100px;
+}
+
+nav .navBarToggle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    top:0;
+    z-index: 1000;
+}
+
+
+nav .navBarToggle button{
+    padding:8px 15px;
+    border-radius: 25px;
+    border: 1px solid #F4AA3C;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    cursor: pointer;
+}
+
+nav .navBarToggle button .fa-solid{
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+nav .actualNavBar{
+    position: absolute;
+    width: 100%;
+    top:0;
+    left: 0;
+    height: 100vh;
+    padding-top: 100px;
+    overflow: hidden;
+    transition:1s backdrop-filter linear , .5s all linear;
+    backdrop-filter:blur(50px);
+    background: rgba(0, 41, 21, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 999;
+}
+
+nav .actualNavBar .navLinks{
+    max-width: 600px;
+    min-width: 350px;
+    padding:20px;
+}
+
+nav .actualNavBar .navLinks ul li{
+    list-style: none;
+    height: 100%;
+}
+
+nav .actualNavBar .navLinks ul li a{
+    height: 100%;
+    padding:0px 20px;
+    font-size: clamp(30px,5vh, 80px)!important;
+    color:#fff;
+    text-decoration: none;
+    text-align: right;
+    text-transform: uppercase;
+    position: relative;
+    float: right;
+    margin: 7px 0px;
+    font-family: 'Playfair Display', serif;
+}
+ 
+
+
+nav .actualNavBar .navLinks ul li a img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left:-15%;
+    width: 20px;
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+
+
+nav .actualNavBar .navLinks ul li a:hover img{
+    left:-10%;
+    opacity: 1;
+}
+
+nav .actualNavBar .socialLinks{
+    width: 100%;
+    padding:20px;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+nav .actualNavBar .allSocials{
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding:15px 0px;
+    gap:10px;
+}
+
+
+@media (max-width:768px) {
+    nav .actualNavBar .allSocials{
+        grid-template-columns: 1fr;
+    }
+}
