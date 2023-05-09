@@ -67,7 +67,7 @@ const club = () => {
 
           <section className='clubItem item1' >
             <div className="imgDiv">
-              <img className='zoomingImg' src="/images/experiences/10.webp" alt="" />
+              <img className='zoomingImg' src="/images/experience/2.jpg" alt="" />
             </div>
             <div className="contentDiv">
               <h2 ref={el => headingsRef.current[0] = el} className='wordsFadeUp'>{convertToWorldsSpans("The UK's Most Luxurious events company")}</h2>
@@ -95,7 +95,7 @@ const club = () => {
 
           <section className='clubItem item4' >
             <div className="imgDiv">
-              <img className='zoomingImg' src="/images/experiences/3.webp" alt="" />
+              <img className='zoomingImg' src="/images/experience/4jpg" alt="" />
             </div>
           </section>
 
@@ -104,7 +104,7 @@ const club = () => {
             <h2 ref={el => headingsRef.current[4] = el} className='wordsFadeUp'>{convertToWorldsSpans('Events')}</h2>
             <div style={{ padding: "60px", overflow: "hidden" }} className="imgDiv">
               <div style={{ overflow: "hidden" }} className="innerImageContainer">
-                <img className='zoomingImg' src="/images/experiences/4.webp" alt="" />
+                <img className='zoomingImg' src="/images/experience/6.jpg" alt="" />
               </div>
             </div>
             <div className="contentDiv">
@@ -116,7 +116,7 @@ const club = () => {
 
           <section className='clubItem item4' >
             <div className="imgDiv">
-              <img className='zoomingImg' src="/images/experiences/5.webp" alt="" />
+              <img className='zoomingImg' src="/images/experience/7.jpg" alt="" />
             </div>
           </section>
 
@@ -132,10 +132,10 @@ const club = () => {
               <h2 style={{ fontSize: "calc(18px + 2vw)" }} ref={el => headingsRef.current[7] = el} className='wordsFadeUp'>{convertToWorldsSpans('Why Us?')}</h2>
             </div>
             <div style={{ overflow: "hidden" }} className="child_div_two">
-              <img className='zoomingImg' src='/images/experiences/11.webp' alt="loading" />
+              <img className='zoomingImg' src='/images/experience/8.jpg' alt="loading" />
             </div>
             <div style={{ overflow: "hidden" }} className="child_div_two">
-              <img className='zoomingImg' src='/images/experiences/6.webp' alt="loading" />
+              <img className='zoomingImg' src='/images/experience/9.jpg' alt="loading" />
             </div>
             <div className="child_div">
               <p>With an eternal blend of luxurious elegance and fairytail atmosphere, Vogue Luxury Events endlessly aims to create one in a lifetime magical experience for our clients</p>
@@ -148,7 +148,7 @@ const club = () => {
               Entertain
             </h2>
             <div className="imgDiv">
-              <img className='zoomingImg' src="/images/entertain.jpg" alt="" />
+              <img className='zoomingImg' src="/images/experience/10.jpg" alt="" />
             </div>
           </section>
 
@@ -158,12 +158,12 @@ const club = () => {
               <h2 style={{ fontSize: "calc(18px + 2vw)" }} ref={el => headingsRef.current[8] = el} className='wordsFadeUp'>{convertToWorldsSpans('INDULGE')}</h2>
             </div>
             <div style={{ overflow: "hidden" }} className="child_div_two">
-              <img className='zoomingImg' src='/images/indulge.jpg' alt="loading" />
+              <img className='zoomingImg' src='/images/experience/11.jpg' alt="loading" />
             </div>
           </div>
           <div className='parent_grid'>
             <div style={{ overflow: "hidden" }} className="child_div_two">
-              <img className='zoomingImg' src='/images/indulge2.jpeg' alt="loading" />
+              <img className='zoomingImg' src='/images/experience/12.jpg' alt="loading" />
             </div>
             <div className="child_div">
               <h2 style={{ fontSize: "calc(18px + 2vw)" }} ref={el => headingsRef.current[9] = el} className='wordsFadeUp'>{convertToWorldsSpans('CELEBRATE')}</h2>
@@ -176,14 +176,14 @@ const club = () => {
               <h2 style={{ fontSize: "calc(18px + 2vw)" }} ref={el => headingsRef.current[10] = el} className='wordsFadeUp big'>{convertToWorldsSpans('PRIVATE DINING & EXCLUSIVE PARTIES')}</h2>
             </div>
             <div style={{ overflow: "hidden" }} className="child_div_two">
-              <img className='zoomingImg' src='/images/celebrate.jpeg' alt="loading" />
+              <img className='zoomingImg' src='/images/experience/13.jpg' alt="loading" />
             </div>
           </div>
 
 
         </div>
         <div style={{ overflow: "hidden" }} className="Image">
-          <img className='zoomingImg' src="/images/vogue-bottom.jpg" style={{ width: "100%" }} alt="" />
+          <img className='zoomingImg' src="/images/experience/14.jpg" style={{ width: "100%" }} alt="" />
         </div>
       </div>
     </>
