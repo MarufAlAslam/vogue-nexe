@@ -149,6 +149,59 @@ h2.wordsFadeUp.big {
     text-align: center;
 }
 
+
+/* nav animation */
+.nav-animation-1, .nav-animation-2, .nav-animation-3 {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  transform: translateY(100%);
+}
+
+.nav-animation-1 {
+  background-color: green;;
+  animation-name: navanimation;
+  animation-duration: 1.5s;
+  animation-delay: 0s;
+}
+
+.nav-animation-2 {
+  background: url("../public/images/nav.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation-name: navanimation;
+  animation-duration: 1.3s;
+  animation-delay: 0.4s;
+}
+
+.nav-animation-3 {
+  background-color: white;
+  animation-name: navanimation;
+  animation-duration: 1s;
+  animation-delay: 0.8s;
+}
+
+
+/* navanimation */
+
+@keyframes navanimation {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+
+
+
+
+
 @keyframes fadeUpNextBtn {
   0%{
     transform: translateY(15px);

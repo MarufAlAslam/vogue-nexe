@@ -5,6 +5,8 @@ import Link from 'next/link'
 const NavBar = ({ children }) => {
 
     const [NavToggle, setNavToggle] = useState(false)
+
+    const [animate, setAnimate] = useState(false)
     const { pathname } = useRouter()
 
     useEffect(() => {
@@ -12,8 +14,27 @@ const NavBar = ({ children }) => {
     }, [pathname])
 
 
+    const animateHandler = () => {
+        setAnimate(true)
+        setNavToggle(false)
+
+        setTimeout(() => {
+            setAnimate(false)
+        }, 2000);
+    }
+
     return (
         <div style={{ height: NavToggle ? "100vh" : "auto", overflow: NavToggle ? "hidden" : "auto" }} className="Layout">
+
+            {
+                animate && (
+                    <div className="nav-animation">
+                        <div className="nav-animation-1"></div>
+                        <div className="nav-animation-2"></div>
+                        <div className="nav-animation-3"></div>
+                    </div>
+                )
+            }
 
             {/* Navivation Bar */}
             <nav>
@@ -38,12 +59,12 @@ const NavBar = ({ children }) => {
                 <div style={{ opacity: NavToggle ? "1" : "0", visibility: NavToggle ? "visible" : "hidden" }} className="actualNavBar">
                     <div className="navLinks">
                         <ul>
-                            <li><Link href="/"> <img src="/images/arrow.png" alt="" /> Home </Link></li>
-                            <li><Link href="/vogue-experience"> <img src="/images/arrow.png" alt="" /> VOGUE EXPERIENCE </Link></li>
-                            <li><Link href="/highlights"> <img src="/images/arrow.png" alt="" /> HIGHLIGHTS </Link></li>
-                            <li><Link href="/testimonials"> <img src="/images/arrow.png" alt="" /> TESTIMONIALS </Link></li>
-                            <li><Link href="/about"> <img src="/images/arrow.png" alt="" /> ABOUT US </Link></li>
-                            <li><Link href="/contact-us"> <img src="/images/arrow.png" alt="" /> CONTACT US</Link></li>
+                            <li><Link onClick={animateHandler} href="/"> <img src="/images/arrow.png" alt="" /> Home </Link></li>
+                            <li><Link onClick={animateHandler} href="/vogue-experience"> <img src="/images/arrow.png" alt="" /> VOGUE EXPERIENCE </Link></li>
+                            <li><Link onClick={animateHandler} href="/highlights"> <img src="/images/arrow.png" alt="" /> HIGHLIGHTS </Link></li>
+                            <li><Link onClick={animateHandler} href="/testimonials"> <img src="/images/arrow.png" alt="" /> TESTIMONIALS </Link></li>
+                            <li><Link onClick={animateHandler} href="/about"> <img src="/images/arrow.png" alt="" /> ABOUT US </Link></li>
+                            <li><Link onClick={animateHandler} href="/contact-us"> <img src="/images/arrow.png" alt="" /> CONTACT US</Link></li>
                         </ul>
                     </div>
                     {/* <div className="socialLinks">
