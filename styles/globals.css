@@ -198,6 +198,17 @@ h2.wordsFadeUp.big {
 }
 
 
+@media screen and (max-width: 767px){
+  .abs-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    font-size: 55px !important;
+}
+}
+
 
 
 

@@ -60,10 +60,17 @@ const contact = () => {
                         <div className="left">
 
                             <h2>Get in touch with us</h2>
+                            <p style={{marginBottom: "20px", fontSize: "13px"}}>
+                            PLEASE COMPLETE THE FORM BELOW, INCLUDING AS MUCH INFORMATION AS POSSIBLE REGARDING THE EVENT.
+                            </p>
                             <form>
                                 <div className="eachfield">
-                                    <label htmlFor="name">Full Name</label>
-                                    <input htmlFor="id" type="text" placeholder='Name' required />
+                                    <label htmlFor="name">First Name</label>
+                                    <input htmlFor="id" type="text" placeholder='First Name' required />
+                                </div>
+                                <div className="eachfield">
+                                    <label htmlFor="name">Last Name</label>
+                                    <input htmlFor="id" type="text" placeholder='Last Name' required />
                                 </div>
                                 <div className="eachfield">
                                     <label htmlFor="email">Email Address</label>
@@ -72,6 +79,15 @@ const contact = () => {
                                 <div className="eachfield">
                                     <label htmlFor="subject">Subject</label>
                                     <input id="subject" type="text" placeholder='Subject' required />
+                                </div>
+                                
+                                <div className="eachfield">
+                                    <label htmlFor="date">Date of enquiry</label>
+                                    <input id="date" type="date" placeholder='Date of Enquiry' required />
+                                </div>
+                                <div className="eachfield">
+                                    <label htmlFor="event">Where is your event?</label>
+                                    <input id="event" type="text" placeholder='Where is your event?' required />
                                 </div>
                                 <div className="eachfield">
                                     <label htmlFor="message">Message</label>
@@ -85,7 +101,7 @@ const contact = () => {
                             </form>
                         </div>
                         <div className="right">
-                            <img className='zoomingImg' src="/images/contact.JPG" alt="" />
+                            <img className='zoomingImg cover' style={{objectFit:"cover"}} src="/images/contact.JPG" alt="" />
                         </div>
                     </div>
                 </div>
