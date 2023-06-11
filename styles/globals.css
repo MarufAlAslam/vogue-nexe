@@ -195,8 +195,8 @@ h2.wordsFadeUp.big {
 }
 
 .nav-animation-1 {
-  /* background-color: green; */
-  background: url("../public/images/gold.jpeg");
+  background-color: green;
+  /* background: url("../public/images/gold.jpeg"); */
   animation-name: navanimation;
   animation-duration: 1.7s;
   animation-delay: 0s;
