@@ -207,10 +207,17 @@
   object-fit: conver;
 }
 
-.contact .contactForm h2 {
+/* .contact .contactForm h2 {
   font-family: "Poppins";
   margin-bottom: 20px;
   font-weight: 500;
+} */
+
+.contact .contactForm h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 40px;
 }
 
 .contact .contactForm form {

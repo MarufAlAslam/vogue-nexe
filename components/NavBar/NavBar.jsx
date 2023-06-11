@@ -40,7 +40,8 @@ const NavBar = ({ children }) => {
             <nav>
                 <div className="navBarToggle">
                     <div style={{ transition: ".5s" }} className="logo">
-                        <Link style={{ textDecoration: "none", color: NavToggle ? "#fff" : "#000" }} href="/">
+                        {/* <Link style={{ textDecoration: "none", color: NavToggle ? "#fff" : "#000" }} href="/"> */}
+                        <Link style={{ textDecoration: "none", color: "#f7ef8a" }} href="/">
                             Vogue Luxury Events
                         </Link></div>
                     <div>

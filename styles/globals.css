@@ -46,7 +46,40 @@ body {
   }
 }
 
+section.social {
+  width: 100%;
+  margin: auto;
+  padding: 20px 5%;
+  background: #EEEEEE;
+}
 
+.social a{
+  text-decoration: none;
+  color: black;
+  font-family: "playfair display", serif;
+}
+
+.social a{
+  margin-right: 6px;
+}
+
+.relative{
+  position: relative;
+}
+
+section.social.experience {
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+  background: transparent;
+}
+
+section.social.experience a{
+  color: #fff;
+}
+section.social.white{
+  background-color: white;
+}
 
 /* Moving World by World Text */
 
@@ -162,14 +195,16 @@ h2.wordsFadeUp.big {
 }
 
 .nav-animation-1 {
-  background-color: green;;
+  /* background-color: green; */
+  background: url("../public/images/gold.jpeg");
   animation-name: navanimation;
   animation-duration: 1.7s;
   animation-delay: 0s;
 }
 
 .nav-animation-2 {
-  background: url("../public/images/nav.jpg");
+  /* background: url("../public/images/nav.jpg"); */
+  background: url("../public/images/flower.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -179,7 +214,7 @@ h2.wordsFadeUp.big {
 }
 
 .nav-animation-3 {
-  background-color: white;
+  background-color: green;
   animation-name: navanimation;
   animation-duration: 1s;
   animation-delay: 0.8s;
