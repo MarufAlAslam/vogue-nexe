@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 const club = () => {
   return (
@@ -10,54 +11,54 @@ const club = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="testimonials">
-        <header>
+        {/* <header className="bg-none">
           <div className="Header">
-            <h1>Testimonials </h1>
+            <h1>client testimonials </h1>
           </div>
-        </header>
+        </header> */}
+
+        <div className="container">
+          <div className="text-center">
+            <h1 className="testimonial-title">client testimonials</h1>
+            <h3 className="subtitle">
+              Read love notes from our previous clients and vendor partners!
+            </h3>
+          </div>
+        </div>
 
         <div class="container">
           <div class="box">
             <div class="imgDiv left">
               <img
                 className="zoomingImg"
-                src="/images/testimonials/1.webp"
+                src="/images/testimonials/1.jpg"
                 alt=""
               />
+              <p>Photography by Joe & Jen Photo</p>
             </div>
             <div class="right text">
               <div class="content">
-                <p>
-                  Kelly and Sati not only went above and beyond they exceeded
-                  all expectations. Our relationship was built on trust and
-                  friendship and they guided us through the whole process. Being
-                  so particular about our vision we spent many late nights at
-                  their office but in the end we left it to them and our wedding
-                  decor blew us away - we walked into Chateau Impney and
-                  couldn’t believe how stunning it looked! Every detail was
-                  executed to perfection. We felt like teks we had walked into
-                  our Pinterest wedding lle Va of dreams!
-                </p>
-
-                <p>
-                  2 years later and we still get people complimenting us on our
-                  wedding decor. Sati and Kelly created bespoke pieces that we
-                  could only have dreamed of - everything from the staging, to
-                  the centre pieces and a large chandelier were handcrafted and
-                  customised for the wedding. Not only did they understand our
-                  vision but were able to create and execute it.
-                </p>
-
-                <p>
-                  We couldn’t recommend Vogue Luxury Events enough - Sati’s
-                  creative flair paired with Kelly’s execution skills make them
-                  an unrivalled pair.
-                </p>
-
-                <p>
-                  Sati, Kelly - we appreciate everything you've done for us, you
-                  have a special place in our hearts and will always be more
-                  than just our wedding suppliers!
+                <h2 className="name">Allie + Sam</h2>
+                <h4 className="date">MARRIED SEPTEMBER 2022</h4>
+                <p className="fs-18">
+                  “Soon after getting engaged, it became clear that we needed a
+                  partner to help us navigate the wedding planning process,
+                  especially during the pandemic, and pull off the event of our
+                  dreams. Lexie was exactly what we were hoping for - a steady
+                  and dedicated guide who advised us on the best vendors, a
+                  stunning design and every detail in between in the lead up to
+                  our big day. She is detail-oriented and understood our
+                  priorities and needs from the get-go, which was so comforting
+                  during a busy time! And when Lexie went on maternity leave,
+                  Jocelyn stepped in to flawlessly execute all of the moving
+                  parts. From day one, she was extremely kind, caring and
+                  responsive to our every need - and anticipated things we
+                  hadn't even thought of! She was also a joy to have with us on
+                  the wedding day as she led the coordination, making sure we
+                  were on time, nourished and enjoying our day. As a couple with
+                  a very specific vision for what we wanted our wedding to feel
+                  like, the Availed team were amazing partners in helping to
+                  make it a reality. Thank you, Lexie and Jocelyn!”
                 </p>
               </div>
             </div>
@@ -65,58 +66,62 @@ const club = () => {
           <div class="box">
             <div class="left text">
               <div class="content">
-                <p>
-                  Kelly, Sati and the team did a phenomenal job with the décor
-                  for our wedding. They truly brought my vision to life and
-                  understood from the first meeting exactly the style and vibe |
-                  was going for. | really appreciated how the team worked with
-                  me, using their expertise and designs, as well as
-                  collaborating with my ideas. They were professional,
-                  supportive, friendly, and at the top of their game. Our
-                  wedding was a few months ago and we still get comments from
-                  guests saying how amazing the room was thanks to the unique
-                  and striking centre pieces, the beautiful table cloths and the
-                  stunningly dressed head table area, which far exceeded my
-                  expectations. | 100% recommend Vogue Luxury Events to anyone
-                  looking for a high-quality service and product that is very
-                  reasonably priced. Thank you so much for contributing to
-                  making the day perfect!
+                <h2 className="name">Kaitlin + Josh</h2>
+                <h4 className="date">MARRIED JULY 2022</h4>
+                <p className="fs-18">
+                  “I wish I could give Availed 10 stars because they absolutely
+                  deserve it. Lexie and her team are outstanding and my husband
+                  and I are so thankful we worked with them on our big day. They
+                  made the planning processes and wedding day seamless and fun
+                  and I’m honestly note quite sure how we would have done it all
+                  without them. Lexie and her team brought our dreams to life
+                  and designed us the most stunning wedding. We started off the
+                  planning process with Lexie and later learned that Jocelyn
+                  would be our lead planner while Lexie was out on maternity
+                  leave. This transition was so easy and we had a blast working
+                  with Jocelyn – she coordinated with all of the vendors leading
+                  up to the wedding and kept us on schedule our entire day. I
+                  didn’t even have to keep track of our timeline on the wedding
+                  day – she had everything under control. If you are considering
+                  booking Availed for your big day, I’m here to tell you that
+                  you 1000% should. It was the best decision we made while
+                  planning our wedding.”
                 </p>
               </div>
             </div>
             <div class="imgDiv right">
               <img
                 className="zoomingImg"
-                src="/images/testimonials/2.webp"
+                src="/images/testimonials/2.jpg"
                 alt=""
               />
+              <p>Photography by Joe & Jen Photo</p>
             </div>
           </div>
           <div class="box">
             <div class="imgDiv left">
               <img
                 className="zoomingImg"
-                src="/images/testimonials/3.webp"
+                src="/images/testimonials/3.jpg"
                 alt=""
               />
+              <p>Photography by Joe & Jen Photo</p>
             </div>
             <div class="right text">
               <div class="content">
-                <p>
-                  Satin and Kelly are an amazing events planner! They executed
-                  everything | wanted in order to give me a secret garden themed
-                  wedding. They were so easy to talk to as well as being so
-                  helpful. | would definitely recommend you book with them!
-                </p>
-                <p>
-                  They are here to help and understand all types of budgets,
-                  which | found great! The quality of their work is superb - if
-                  you haven't already checked them out on Instagram, make sure
-                  you do!
-                </p>
-                <p>
-                  Thanks again to you both for making my dream wedding a
-                  reality! | truly loved it! Gurleen xx
+                <h2 className="name">Clara + Justin</h2>
+                <h4 className="date">MARRIED JUNE 2022</h4>
+                <p className="fs-18">
+                  “Taylor and Lexie @ Availed was absolutely wonderful to work
+                  with! We worked with Taylor with the month of the wedding
+                  coordinator package. Taylor was so on top of things when it
+                  came to connecting with all of our vendors and coordinating
+                  the wedding with the event planners at the venue. Her and
+                  Bella also helped with setting up the Korean ceremony portion
+                  of the wedding, which our guest loved so much. Our wedding was
+                  so perfect and I can't thank Taylor enough for helping our day
+                  go by so smoothly. I would highly recommend Taylor and
+                  Availed!”
                 </p>
               </div>
             </div>
@@ -124,42 +129,118 @@ const club = () => {
           <div class="box">
             <div class="left text">
               <div class="content">
-                <p>
-                  We worked with Kelly and Sati from Vogue Luxury Events for our
-                  Civil wedding and Reception party in 2022.
-                </p>
-                <p>
-                  From Jyoti and |, we'd like to say a really big thank you to
-                  Sati, your son and your team. Every single one of our guests
-                  were blown away with the decor you put together, the quality,
-                  the theme and the styling were are exceptional. Kelly went
-                  above and beyond when | wasn't on site by coordinating
-                  everything with the different suppliers for me. It was a real
-                  pleasure working with you on our parties.
-                </p>
-                <p>
-                  In our first conversation you said something that stuck with
-                  me and made me think this is the company | want to work with
-                  on our wedding. You told me you aren't offering a decor
-                  service, you're providing an event service where you want the
-                  whole day to go well for the bride and groom. And that is
-                  exactly what you did - thank you so much.
-                </p>
-                <p>
-                  I'd happily recommend Kelly and Vogue Luxury Events to anyone
-                  wanting something special for their events.
+                <h2 className="name">Laurel + Coltyn</h2>
+                <h4 className="date">MARRIED JUNE 2022</h4>
+                <p className="fs-18">
+                  “The Availed team is AMAZING! My husband and I finally got
+                  married in June of 2022 after working with Lexie since 2018.
+                  Even though it had been a whirlwind few years and Lexie always
+                  kept me calm and feeling comfortable throughout all the
+                  changes, postponements, etc. I reached out countless times for
+                  advice and always got such a quick and thorough response! I
+                  would recommend the Availed team to ANYONE getting married - I
+                  had Christine and Bethany work with me on our wedding day and
+                  it truly was a game changer. I don't think I could have done
+                  half of it without them (and would have been beyond stressed
+                  without their guidance). Overall, I truly cannot thank Availed
+                  enough! If you are thinking about it, BOOK THEM!”
                 </p>
               </div>
             </div>
             <div class="imgDiv right">
               <img
                 className="zoomingImg"
-                src="/images/testimonials/4.webp"
+                src="/images/testimonials/4.jpg"
                 alt=""
               />
+              <p>Photography by Joe & Jen Photo</p>
             </div>
           </div>
-          <div className="box">
+          <div class="box">
+            <div class="imgDiv left">
+              <img
+                className="zoomingImg"
+                src="/images/testimonials/5.jpg"
+                alt=""
+              />
+              <p>Photography by Joe & Jen Photo</p>
+            </div>
+            <div class="right text">
+              <div class="content">
+                <h2 className="name">Loren + Max</h2>
+                <h4 className="date">MARRIED MAY 2022</h4>
+                <p className="fs-18">
+                  “Lexie and her team are the absolute best! I could not
+                  recommend them more. When I got engaged, I interviewed over 10
+                  wedding planners and Lexie was by far my top choice - she's
+                  straightforward, thoughtful, and takes care of every detail
+                  you could imagine. We hired Lexie to design our wedding and it
+                  was SO beautiful; she recommended the best vendors, and we
+                  could not have been more happy with how the day turned out.
+                  She'll bring you in to the details that you want to contribute
+                  to, but also takes the time to understand your vision so that
+                  she can help make some of the decisions for you. Lexie
+                  organized every detail not only leading up to the wedding but
+                  on the day of - she was amazing. I realized on the day of our
+                  wedding that I'd mixed up a detail with the catering orders
+                  and Lexie was so calm, swiftly corrected it, and I didn't have
+                  to think twice about it. I recommend Lexie to everyone I know
+                  - seriously, I don't know what we would have done without her!
+                  Here's your sign to hire Availed!!!!”
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="left text">
+              <div class="content">
+                <h2 className="name">Lindsey + Shane</h2>
+                <h4 className="date">MARRIED OCTOBER 2021</h4>
+                <p className="fs-18">
+                  “The only regret I have about hiring Availed Events was not
+                  hiring them sooner!! They were a life saver. Wedding planning
+                  is stressful and planning a wedding during COVID and moving
+                  out of state is extra stressful. Lexie and her team made
+                  everything so much easier. After our first meeting a huge
+                  weight was lifted. Her planning made our day run so smooth!
+                  Her team made it so easy not to worry and just enjoy our day.
+                  Thank you guys for everything!”
+                </p>
+              </div>
+            </div>
+            <div class="imgDiv right">
+              <img
+                className="zoomingImg"
+                src="/images/testimonials/6.jpg"
+                alt=""
+              />
+              <p>Photography by Joe & Jen Photo</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="imgDiv left">
+              <img
+                className="zoomingImg"
+                src="/images/testimonials/7.jpg"
+                alt=""
+              />
+              <p>Photography by Joe & Jen Photo</p>
+            </div>
+            <div class="right text">
+              <div class="content">
+                <h2 className="name">Hinnah + Atif</h2>
+                <h4 className="date">MARRIED JULY 2021</h4>
+                <p className="fs-18">
+                  “Lexie was great in all things planning! We had to reschedule
+                  our 3 day wedding events several times because of COVID, and
+                  Lexie was very helpful and supportive. I knew I could just
+                  show up to my events without having to stress about the little
+                  or big things. Definitely recommend!”
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="box hidden">
             <div className="imgDiv">
               <img
                 className="zoomingImg"
@@ -168,9 +249,15 @@ const club = () => {
               />
             </div>
           </div>
+
+          <div className="more">
+            <a href="/testimonials" className="btn btn-primary">
+              More Reviews
+            </a>
+          </div>
         </div>
         <div className="relative">
-          <section className="social experience">
+          <section className="social experience black">
             <a
               href="https://www.instagram.com/vogueluxuryevents/"
               target="_blank"
